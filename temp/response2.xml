@@ -1,0 +1,62 @@
+<samlp:Response xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"
+                xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="blmhbojeinlbjomhkeomaehoagkbjljlokgmjefj"
+                IssueInstant="2016-07-21T11:54:32Z" Version="2.0">
+    <saml:Issuer>http://www.nuskinkorea.co.kr/sso/saml2/idp</saml:Issuer>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+            <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/>
+            <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <Reference URI="">
+                <Transforms>
+                    <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                </Transforms>
+                <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <DigestValue>ue0w+ObmrYq1Uq0OvYf+sabC34E=</DigestValue>
+            </Reference>
+        </SignedInfo>
+        <SignatureValue>Vzy3PJzyMJOxGGi0RdOgmNTTskAxYA3gj5zb0mhaFXPATjQV+KcYgITQbRadFdao1OpbqWKy8TMa
+            PMWf/bEFRQ2tt4UTjL6euyUxv+HIdR07U/KYkfDmHu2VpRsHU/vNHBc23+/sG37BV4Nr16BtkPXF
+            bZeUhB9EuF4eg2B739c=
+        </SignatureValue>
+        <KeyInfo>
+            <KeyValue>
+                <RSAKeyValue>
+                    <Modulus>1O3w5oVh+3Uyq132NpgIITjL1SuzcVZOHCW55dwFkljixvXskgC4rqwtpmxt5e21tHechxUtQ0fl
+                        4ND2RZ1ukjJdLxmd+Qx0/K05k770VI0se9Azy/ONutPPjrX2E0cCSKlAaMDrf0WyJwhfOa4XSW0G
+                        0uXUfs9uXqTNaMCKQ4E=
+                    </Modulus>
+                    <Exponent>AQAB</Exponent>
+                </RSAKeyValue>
+            </KeyValue>
+        </KeyInfo>
+    </Signature>
+    <samlp:Status>
+        <samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+    </samlp:Status>
+    <saml:Assertion xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    ID="mlpomjlffmccgaonponkhgdpkpdbcigkliiofpnh" IssueInstant="2003-0     4-17T00:46:02Z"
+                    Version="2.0">
+        <saml:Issuer>http://www.nuskinkorea.co.kr/sso/saml2/idp</saml:Issuer>
+        <saml:Subject>
+            <saml:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:emailAddress">KR0000001</saml:NameID>
+            <saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer"/>
+        </saml:Subject>
+        <saml:Conditions NotBefore="2016-07-20T11:54:32Z" NotOnOrAfter="2016-07-22T11:54:32Z"></saml:Conditions>
+        <saml:AuthnStatement AuthnInstant="2016-07-21T11:54:32Z">
+            <saml:AuthnContext>
+                <saml:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:Password</saml:AuthnContextClassRef>
+            </saml:AuthnContext>
+        </saml:AuthnStatement>
+        <saml:AttributeStatement>
+            <saml:Attribute Name="primary_email" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+                <saml:AttributeValue xsi:type="xs:string">KR0000001</saml:AttributeValue>
+            </saml:Attribute>
+            <saml:Attribute Name="first_name" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+                <saml:AttributeValue xsi:type="xs:string">KR0000001</saml:AttributeValue>
+            </saml:Attribute>
+            <saml:Attribute Name="last_name" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+                <saml:AttributeValue xsi:type="xs:string">KR0000001</saml:AttributeValue>
+            </saml:Attribute>
+        </saml:AttributeStatement>
+    </saml:Assertion>
+</samlp:Response>

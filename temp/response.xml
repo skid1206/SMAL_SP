@@ -1,0 +1,66 @@
+<samlp:Response xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"
+                xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="ogkcpdhdfbgcdehibopdjleibaajajkfffmmklgn"
+                IssueInstant="2016-07-22T09:53:02Z" Version="2.0">
+    <saml:Issuer>http://www.nuskinkorea.co.kr/sso/saml2/idp</saml:Issuer>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+            <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/>
+            <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <Reference URI="">
+                <Transforms>
+                    <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                </Transforms>
+                <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <DigestValue>yV2r6VS84pU6j66XSyRtADp+cNs=</DigestValue>
+            </Reference>
+        </SignedInfo>
+        <SignatureValue>uG8jQ0BLDTHb47ckVzi0Qb3mP+tUYcca29Z3fHvhI19LcnvVds18xGm6SDcgH7119lo3K8jivR1n
+            16h87pMEfxykdf1Hco0IaJLddtfbikZv6oJea3MUUZXaHvbHfVm2v3PNSSYWd7OVPd+1ByjFz++4
+            M4WoPbbvpQPmSd+cN1PJWfpO5CtXRJXg3AA856+17sPT+d1HFACcd7qwBNI2Ix3OssgSqO091+ka
+            p357fZrtFwyValnulurxKE0TxnEEyi9pu0rStC9NQSkzKbqrqrXlhBLWINs1OMl0Hc0ERqlmjGlE
+            IY1rmvva5BcYVga/j9RGjJxJVwNUZ3gW6YJCIg==
+        </SignatureValue>
+        <KeyInfo>
+            <KeyValue>
+                <RSAKeyValue>
+                    <Modulus>7qRZq3hj6lQXxqnJrOUmuHn+HEU989Oc8og6L6AQ9C8vgZHPi4hVMGUptPZjqddkDsMQNLQX3JSl
+                        ixCuhTDnfhaEq2ctCLva3xm31mos/yrEwt3mF3h+WwXmVQfpzRkyhR6I9+ERg5hKQSw4473sj8nh
+                        BSWLsrOf4+oFgBsAZ111oL27eZGwz2sB2yGsmVYVKEJu0zC+UcvymDGcs5WFuLZT9AqooDXeMv3s
+                        gLaq9oSWLGX38s1Lw68zA9piZjV723FBaxcUD+h4VqVvcnoNT9D+LDOJbbC8RfEW+tDAtOK7tIV8
+                        b2cmiu6v0R+kX3Wpkce7nAI6eBfW1UcejULfFw==
+                    </Modulus>
+                    <Exponent>AQAB</Exponent>
+                </RSAKeyValue>
+            </KeyValue>
+        </KeyInfo>
+    </Signature>
+    <samlp:Status>
+        <samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+    </samlp:Status>
+    <saml:Assertion xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    ID="eohbkegaadhjelinfpnokepfcijnnjcelinpchcf" IssueInstant="2003-0     4-17T00:46:02Z"
+                    Version="2.0">
+        <saml:Issuer>http://www.nuskinkorea.co.kr/sso/saml2/idp</saml:Issuer>
+        <saml:Subject>
+            <saml:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:emailAddress">KR0000001</saml:NameID>
+            <saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer"/>
+        </saml:Subject>
+        <saml:Conditions NotBefore="2016-07-21T09:53:02Z" NotOnOrAfter="2016-07-23T09:53:02Z"></saml:Conditions>
+        <saml:AuthnStatement AuthnInstant="2016-07-22T09:53:02Z">
+            <saml:AuthnContext>
+                <saml:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:Password</saml:AuthnContextClassRef>
+            </saml:AuthnContext>
+        </saml:AuthnStatement>
+        <saml:AttributeStatement>
+            <saml:Attribute Name="primary_email" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+                <saml:AttributeValue xsi:type="xs:string">KR0000001</saml:AttributeValue>
+            </saml:Attribute>
+            <saml:Attribute Name="first_name" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+                <saml:AttributeValue xsi:type="xs:string">SeongHo</saml:AttributeValue>
+            </saml:Attribute>
+            <saml:Attribute Name="last_name" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+                <saml:AttributeValue xsi:type="xs:string">Shin</saml:AttributeValue>
+            </saml:Attribute>
+        </saml:AttributeStatement>
+    </saml:Assertion>
+</samlp:Response>
