@@ -4,6 +4,8 @@ import net.paygate.saml.dsig.SAMLVerifier;
 import net.paygate.saml.util.SamlException;
 import net.paygate.saml.util.Util;
 import org.apache.commons.lang.SystemUtils;
+import org.apache.xml.security.exceptions.Base64DecodingException;
+import org.apache.xml.security.utils.Base64;
 import org.jdom.Content;
 import org.jdom.Document;
 import org.jdom.Element;
@@ -32,6 +34,12 @@ public class PublicACSServlet extends HttpServlet {
 		String SAMLResponse = request.getParameter("SAMLResponse");
 		String RelayState = request.getParameter("RelayState");
 		String domainName = request.getParameter("domainName");
+
+		try {
+			SAMLResponse = new String(Base64.decode(SAMLResponse));
+		} catch (Base64DecodingException e) {
+			throw new RuntimeException(e);
+		}
 
 		System.out.println("------------SAMLResponse:" + SAMLResponse);
 		System.out.println("------------RelayState:" + RelayState);

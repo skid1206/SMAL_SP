@@ -30,7 +30,7 @@
 		<li>Page of Request Forwarding to IP (URI) : <input type="text" name="forwardingURI" value="/t/sso/sp/service_proc.jsp"  /></li>
 		
 		<li style="font-weight:bold">Variable pre-defined by SSO-Admin of IP</li>
-		<li>IP SSO Login Path (URL) : <input type="text" name="loginForm" value="http://www.nuskinkorea.co.kr:8080/t/sso/ip/login_form.jsp"/></li>
+		<li>IP SSO Login Path (URL) : <input type="text" name="loginForm" value="http://interface.nuskinkorea.co.kr/sso/saml2/login.jsp"/></li>
 		
 		<li style="font-weight:bold">URL or Parameter typed by user</li>
 		<li>Front Page to Service(URI) : <input type="text" name="RelayState" value="<%= base %>/t/sso/sp/service_front.jsp"  /></li>
